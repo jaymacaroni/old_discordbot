@@ -13,8 +13,5 @@ bot = commands.Bot(command_prefix="!")
 async def on_ready():
     print("Nooty Noot is locked and loaded.")
 
-    bot.load_extension('cogs.reddit')
-
-    bot.run()
-
+bot.load_extension("cogs.reddit")
 bot.run(token)
